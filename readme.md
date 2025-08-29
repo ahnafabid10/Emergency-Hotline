@@ -6,8 +6,8 @@
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
-1.1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
- 
+1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
 getElementById - getElementById is a JavaScript method that finds an element with a specific ID from an HTML document.
 
 getElementsByClassName- getElementsByClassName is a JavaScript method that finds all elements with the same class name in an HTML document.

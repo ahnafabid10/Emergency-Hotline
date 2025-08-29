@@ -542,3 +542,16 @@ document.getElementById('Bangladesh-Railway-copy').addEventListener('click', fun
     console.log(totalCountCopy)
     document.getElementById('count-copy').innerText = totalCountCopy
 })
+
+
+// Array of all copy buttons
+const copyButtons = document.querySelectorAll('[id$="-copy"]');
+
+copyButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const number = this.dataset.number; // Get the number from data-number
+        navigator.clipboard.writeText(number) // Copy to clipboard
+                alert(`Number ${number} copied to clipboard!`);
+
+    });
+});

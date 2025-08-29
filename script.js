@@ -1,3 +1,5 @@
+const callHistory = []
+
 // herHeart
 document.getElementById('her-heart')
 .addEventListener('click', function(){
@@ -111,7 +113,26 @@ document.getElementById('national-call').addEventListener('click',function(){
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+
+        const data = {
+            name: 'National Emergency call Number',
+            number: '999',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call History
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div)   
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -130,7 +151,26 @@ police.addEventListener('click',function(){
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+
+        const data = {
+            name: 'Police Call Number',
+            number: '999',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call History
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div) 
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -147,7 +187,25 @@ document.getElementById('fire-call').addEventListener('click',function(){
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+        const data = {
+            name: 'Fire Call Number',
+            number: '999',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call History
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div) 
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -163,7 +221,25 @@ document.getElementById('ambulance-call').addEventListener('click',function(){
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+        const data = {
+            name: 'Ambulance Service Number',
+            number: '1994-99999',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call History
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div)   
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -180,7 +256,26 @@ document.getElementById('women-child-call').addEventListener('click',function(){
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+        
+        const data = {
+            name: 'Women & Child Helpline',
+            number: '109',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call History
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div)  
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -197,7 +292,26 @@ document.getElementById('Anti-Corruption-call').addEventListener('click',functio
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+        
+        const data = {
+            name: 'Anti Corruption Helpline',
+            number: '106',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call History
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div) 
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -214,7 +328,26 @@ document.getElementById('Electricity-call').addEventListener('click',function(){
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+        
+        const data = {
+            name: 'Electricity Helpline',
+            number: '16216',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call History
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div)  
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -231,8 +364,27 @@ document.getElementById('Brac-call').addEventListener('click',function(){
         alert("Calling Brac Helpline Number 16445...")
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
-        document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+        document.getElementById('coin').innerText = parseIntCoin 
+
+        const data = {
+            name: 'Brac Helpline',
+            number: '16445',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // call history
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div)
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
@@ -249,9 +401,62 @@ document.getElementById('Bangladesh-Railway-call').addEventListener('click',func
         parseIntCoin = parseIntCoin - callCost
         console.log(parseIntCoin)
         document.getElementById('coin').innerText = parseIntCoin
-        return parseIntCoin;  
+
+        // Data 
+        const data = {
+            name: 'Bangladesh Railway',
+            number: '163',
+            date: new Date().toLocaleTimeString()
+        }
+        callHistory.push(data)
+
+        // Call history
+        const div = document.createElement('div')
+        div.innerHTML = `
+            <div class="bg-[#FAFAFA] rounded-xl p-3">
+                <div class="flex items-center justify-between mb-2">
+                    <h1 class="font-bold">${data.name}</h1>
+                    <p>${data.date}</p>
+                </div>
+                <p class="font-bold">${data.number}</p>
+            </div>
+        `;
+        document.getElementById("call-history").appendChild(div)
+
+        
     }
     else{
          alert("You don't have enough coins. You need at least 20 Coins to make a call." )
     }
 })
+
+
+
+// Clear Call History 
+    
+
+
+
+
+// Call history Function 
+// document.getElementById('call-history').addEventListener('click', function (){
+//     console.log(callHistory)
+//     for(const data of callHistory ){
+//         const div = document.createElement('div')
+//         div.innerHTML= `
+//         <div class="bg-[#FAFAFA] rounded-xl p-3">
+//                     <div class="flex items-center justify-between mb-2">
+//                         <h1 class="font-bold">${data.name}</h1>
+//                     <p>${data.date}</p>
+//                     </div>
+//                     <p class="font-bold">16216</p>
+//                 </div>
+//                 `;
+//         document.getElementById("call-history").appendChild(div)
+
+                
+//     }
+// })
+
+
+

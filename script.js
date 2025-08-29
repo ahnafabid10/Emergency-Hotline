@@ -422,6 +422,7 @@ document.getElementById('Bangladesh-Railway-call').addEventListener('click',func
             </div>
         `;
         document.getElementById("call-history").appendChild(div)
+        
 
         
     }
@@ -433,7 +434,21 @@ document.getElementById('Bangladesh-Railway-call').addEventListener('click',func
 
 
 // Clear Call History 
+    // Clear Call History 
+document.getElementById('clear-history').addEventListener('click', function () {
+
+    document.getElementById('call-history').innerHTML = `
+        <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[#111111] text-xl font-bold">
+                <i class="fa-solid fa-clock-rotate-left"></i> Call History
+            </h3>
+            <h3 id="clear-history" class="text-white text-lg font-semibold bg-[#00A63E] p-4 rounded-[45px] cursor-pointer">Clear</h3>
+        </div>
+    `;
     
+    alert("Call history has been cleared!");
+});
+
 
 
 

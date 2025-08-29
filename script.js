@@ -376,7 +376,7 @@ document.getElementById('Brac-call').addEventListener('click',function(){
         // call history
         const div = document.createElement('div')
         div.innerHTML = `
-            <div class="bg-[#FAFAFA] rounded-xl p-3">
+            <div class="bg-[#FAFAFA] rounded-xl p-3 gap-10">
                 <div class="flex items-center justify-between mb-2">
                     <h1 class="font-bold">${data.name}</h1>
                     <p>${data.date}</p>
@@ -549,8 +549,8 @@ const copyButtons = document.querySelectorAll('[id$="-copy"]');
 
 copyButtons.forEach(button => {
     button.addEventListener('click', function() {
-        const number = this.dataset.number; // Get the number from data-number
-        navigator.clipboard.writeText(number) // Copy to clipboard
+        const number = this.dataset.number; 
+        navigator.clipboard.writeText(number)
                 alert(`Number ${number} copied to clipboard!`);
 
     });

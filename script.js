@@ -449,29 +449,96 @@ document.getElementById('clear-history').addEventListener('click', function () {
     alert("Call history has been cleared!");
 });
 
+// copy increase
 
 
-
-
-// Call history Function 
-// document.getElementById('call-history').addEventListener('click', function (){
-//     console.log(callHistory)
-//     for(const data of callHistory ){
-//         const div = document.createElement('div')
-//         div.innerHTML= `
-//         <div class="bg-[#FAFAFA] rounded-xl p-3">
-//                     <div class="flex items-center justify-between mb-2">
-//                         <h1 class="font-bold">${data.name}</h1>
-//                     <p>${data.date}</p>
-//                     </div>
-//                     <p class="font-bold">16216</p>
-//                 </div>
-//                 `;
-//         document.getElementById("call-history").appendChild(div)
-
-                
-//     }
-// })
-
-
-
+document.getElementById('her-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('police-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('fire-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('ambulance-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('women-child-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('Anti-Corruption-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('Electricity-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('Brac-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
+document.getElementById('Bangladesh-Railway-copy').addEventListener('click', function(){
+    console.log('hello')
+    const CountCopy = document.getElementById('count-copy')
+    console.log(CountCopy)
+    const countHerCopy = parseInt(CountCopy.innerText)
+    console.log(countHerCopy)
+    const totalCountCopy = countHerCopy + 1;
+    console.log(totalCountCopy)
+    document.getElementById('count-copy').innerText = totalCountCopy
+})
